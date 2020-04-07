@@ -1,0 +1,685 @@
+.preloader {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: 9999;
+   background-image: url('/images/loaders/index-loader.gif');
+   background-repeat: no-repeat;
+   background-color: black;
+   background-position: center;
+   align-items: center;
+   justify-content: center;
+   display: flex;
+}
+
+html,body{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  height: 310%;
+  scroll-behavior: smooth;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: Lato !important;
+  /*
+  font-family: 'Teko', sans-serif !important;
+  font-family: 'Roboto', sans-serif !important;*/
+}
+
+.home-top{
+  vertical-align: baseline;
+  position: relative;
+  width: 100%;
+  height: 10.5%;
+
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0px !important;
+}
+
+.align-top{
+  position: relative;
+  top: -60px;
+}
+
+.navbar a{
+  color: #fff;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.navbar a:hover{
+  color: #fff;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.navbar .brandname{
+  font-size: 27px !important;
+}
+
+.search-cntr{
+  color:#fff;
+  position: relative;
+  top:65px;
+  max-width: 45% !important;
+  left: -27%;
+}
+.search-cntr input[type='text']{
+  /*! border-radius: 30px; */
+  border-color: #fff;
+  padding-left: 23px;
+  border-radius: 0 !important;
+}
+.search-cntr button{
+
+  background-color: #4714B0;
+  color: #fff;
+  border-radius: 0;
+
+  border-color: #8A2BE2;
+}
+.search-cntr button:hover{
+  color:#fff;
+}
+
+.about-us{
+  position: relative;
+  top: -32px;
+  width: 100%;
+  height: 10%;
+  background-color: #121214 !important;
+  margin-bottom: 0px !important;
+  background-image: url("\\images\\pics\\LB1.jpg");
+  background-position:  right;
+  background-attachment:  fixed;
+  background-repeat: no-repeat;
+}
+
+.about-us h2{
+  font-size: 61px;
+  margin-bottom: 40px;
+  font-family: 'Teko', sans-serif !important;
+}
+.about-us h5,h2{
+  /*! margin-left: 20px !important; */
+  color: #fff !important;
+  margin-top: 20px;
+}
+.about-us h5{
+  font-family: 'Roboto', sans-serif;
+  width: 42%;
+  display: block;
+}
+.payment-sec{
+  color: #101010 !important;
+  position: relative;
+  top: -32px;
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  margin-bottom: 15px !important;
+
+
+}
+.payment-sec img{
+  min-width: 350px;
+  min-height: 100%;
+
+}
+.payment-sec h2{
+  color: #101010;
+  margin-left: 20px;
+  background-image: none !important;
+  margin-bottom: 100px;
+}
+.payment-sec .right-side{
+  color:#101010;
+  background-image: none !important;
+  margin-left: 20px;
+  margin-top: 70px;
+}
+.payment-sec .right-side .checkboxes{
+  font-size: 25px;
+  color: #8A2BE2;
+  background-image: none !important;
+}
+
+.payment-sec .right-side .collection{
+  margin-bottom: 20px;
+  background-image: none !important;
+}
+
+.payment-sec .right-side .collection .col-sm-7{
+  position: relative;
+  top: -10px;
+  background-image: none !important;
+
+}
+
+.services .sections{
+  margin-left: 70px;
+  margin-bottom: 20px;
+}
+
+.services{
+  margin-top: 10px;
+  margin-bottom: 0px !important;
+  width: 100%;
+  height: 11%;
+  background-color: #fff !important;
+}
+
+
+.services .sections .icons{
+  font-size: 45px;
+  margin-bottom: 8px;
+  color: #8A2BE2;
+}
+
+.services .sections .paragraph{
+  color: #101010;
+}
+
+
+/*
+.business{
+  width: 100%;
+}
+
+.business .right{
+  background-image: url('pics\\2796426.jpg');
+  background-position:  right;
+  background-size: cover;
+  height: 300px;
+}
+.business .left{
+  margin-left: 11px;
+}
+*/
+
+.create-account{
+  margin-top: 50px;
+  height: 11.8%;
+  width: 100%;
+  top: -50px;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background-image: url('..\\images\\pics\\cmptr.jfif');
+  background-attachment: fixed;
+}
+
+.create-account .background_clr{
+  background-image: linear-gradient(90deg,#873BDD,purple) !important;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  opacity: 0.55;
+  right: 0;
+  top: 0;
+  z-index: 10;
+}
+
+.create-account .text-over-background{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: transparent;
+  right: 0;
+  z-index: 99999;
+  top: 0;
+}
+
+.create-account .text-over-background .left{
+  margin-left: 10px;
+}
+
+.create-account .text-over-background .left h1{
+  font-size: 2.3rem;
+  margin-bottom: 20px;
+}
+
+.create-account .text-over-background .right{
+
+}
+
+.create-account .text-over-background .right h1{
+  font-size: 2.3rem;
+  margin-bottom: 20px;
+}
+
+.create-account .text-over-background .row{
+  position: relative;
+  top: 20%;
+  right: 0;
+}
+
+.create-account .text-over-background .row a{
+  color: #101010 !important;
+  border-color: #fff;
+  background-color: #fff !important;
+}
+
+.create-account .text-over-background .row a:hover{
+  color: white !important;
+  background-color: #520D91 !important;
+  border-color: #520D91;
+}
+
+
+.service-type{
+  height: 4%;
+  width: 100%;
+  top: -83px;
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+  background-color: #000 !important;
+  margin-bottom: 0px;
+}
+
+.service-type .service-categories{
+  position: relative;
+  right: auto;
+}
+
+.service-type .service-categories .icons{
+  font-size: 42px;
+  color: #FFF;
+  margin-bottom: 20px;
+
+}
+
+.service-type .service-categories p{
+  color: #fff;
+}
+
+.promotion-section{
+
+  top: -90px;
+  position: relative;
+  width: 100%;
+  height: 12%;
+  background-color: #fff !important;
+}
+
+.promotion-section .title h2{
+  position: relative;
+  top: -10px;
+  color: #101010 !important;
+  text-align: center;
+  margin: 0 !important;
+}
+
+.promotion-section .row{
+  margin-top: 20px;
+}
+
+.promotion-section .freelancers{
+ margin:15px;
+ background-color: #fff;
+ padding-left: 0 !important;
+ padding-right: 0 !important;
+ max-width:334px !important;
+ max-height: 465px;
+ font-family: Bahnschrift;
+ border: 2px solid #DDDDDD;
+}
+
+.promotion-section .freelancers .Tnail{
+ height: 300px;
+ width: 330px;
+ max-width:330px;
+
+}
+
+
+.promotion-section .freelancers .service-title{
+ font-size: 21px;
+ text-align: center;
+ margin-top: 14px;
+}
+.promotion-section .freelancers .service-info{
+ width: 100%;
+ height: 120px;
+}
+
+.promotion-section .freelancers .service-info .user-profile{
+ margin-left: 10px;
+
+}
+
+.promotion-section .freelancers .service-info .user-profile .profile-pic{
+ border-radius: 50px;
+ border:1px solid #101010;
+ max-height: 30px;
+ max-width: 30px;
+
+}
+.promotion-section .freelancers .service-info .user-profile .user-name{
+ font-size: 13px;
+ position: relative;
+ bottom: 6px;
+
+}
+
+.promotion-section .freelancers .service-info .service-bottom{
+ height: 110px;
+}
+
+.promotion-section .freelancers .service-info .service-bottom .tags span{
+ margin-left: 5px;
+}
+
+.promotion-section .freelancers .service-info .service-bottom .col{
+ font-size: 14px;
+ color:#6a6a6a;
+}
+
+
+
+.promotion-section .freelancers .service-info .service-bottom .inpts .col{
+ color: #101010 !important;
+}
+
+
+.promotion-section .freelancers .service-info .service-bottom .inpts .col i{
+ color:#8A2BE2;
+}
+
+
+
+
+.carousel-control-next, .carousel-control-prev{
+  font-size: 35px !important;
+  color: #101010 !important;
+}
+
+
+.help-section{
+  background-color: #8A2BE2 !important;
+
+  width: 100%;
+  height: 600px;
+  position: relative;
+  top: -120px;
+}
+
+.help-section .title h2{
+  position: relative;
+  top: -10px;
+  color: #fff !important;
+  text-align: center;
+  margin: 0 !important;
+}
+
+
+
+
+#mobile-navbar{
+  display: none;
+  position: relative;
+  top: 0;
+}
+.btom .col h1{
+  position: relative;
+  bottom: 30px;
+
+}
+.btom .col h1{
+  font-size: 20px;
+}
+.btom{
+  max-height: 5px;
+}
+
+
+
+
+.cnt-algo{
+  margin-top: 25px;
+
+}
+
+.cnt-algo img{
+  height: 422.6px;
+
+}
+
+.modal-header{
+  padding: 0.5rem 1rem !important;
+}
+
+.modal-header .close{
+  color: white;
+  opacity: 1;
+}
+
+.mobile-login{
+  position: relative;
+  top: -83px;
+  height: 340px;
+  background-color: #4714b0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.mobile-login .cnt-login{
+  border: 6.5px solid white;
+  border-radius: 85%;
+  width: 240px;
+  height: 240px;
+}
+
+.mobile-login h2{
+  margin: 40px;
+  font-size: 44px;
+  text-align: center;
+  position: relative;
+  top: 17%;
+}
+
+.mobile-create-account{
+  position: relative;
+  top: -83px;
+  height: 340px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.mobile-create-account .cnt-create{
+  border: 6.5px solid #4714b0;
+  width: 262px;
+  height: 130px;
+}
+
+.mobile-create-account h2{
+  margin: 40px;
+  font-size: 41px;
+  text-align: center;
+  position: relative;
+  top: -4%;
+  color: #4714b0 !important;
+}
+
+.login-register{
+  height: 388px;
+  width: 100%;
+
+  position: relative;
+  top: -153px;
+}
+
+.login-register .col{
+  height: 539px;
+  text-align: center;
+  transition: all 0.4s ease;
+}
+.login-register .btn{
+  border-radius: 0px;
+  background-color: white;
+  color: #4714b0;
+  height: 86px;
+  width: 200px;
+  font-size: 35px;
+  position: relative;
+  top: 200px;
+  border: 4.2px solid #4714b0;
+  transition: all 0.4s ease;
+}
+
+
+.ibtn.circle-btn{
+  height: 200px;
+  border-radius: 50%;
+  position: relative;
+  top: 150px;
+  color: #4714b0;
+  background-color: white;
+  border: 4.2px solid white;
+}
+
+.rbtn.circle-btn{
+  height: 200px;
+  border-radius: 50%;
+  position: relative;
+  top: 150px;
+  color: #4714b0;
+  background-color: white;
+  border: 4.2px solid white;
+}
+
+
+footer{
+  color: white;
+  background-color: #111111;
+  height: 587px;
+}
+footer .col i{
+  font-size: 35px;
+  transition: all 0.35s ease;
+}
+footer .col i:hover{
+  color: #4714b0;
+  cursor: pointer;
+}
+
+#tt-login.change-bg{
+  background-color: #4714b0;
+}
+
+#tt-register.change-bg{
+  background-color: #4714b0;
+}
+
+@media only screen and (max-width: 400px) {
+  .login-register{
+    display: none;
+  }
+  #promotedSec{
+    display: none;
+  }
+  .service-type{
+    height: 140px;
+  }
+
+  .service-type i{
+    font-size: 25px !important;
+  }
+  .service-type p{
+    font-size: 8px;
+  }
+  .service-type .row{
+
+  }
+  .help-section{
+    background-color: white !important;
+    position: relative;
+    top: -115px;
+  }
+  .help-section .title h2{
+    color: #111111 !important;
+  }
+  .create-account{
+    display: none;
+  }
+  .about-us{
+    display: none;
+  }
+  .services{
+    display: none;
+  }
+  .home-top{
+  }
+  .home-top h1{
+    font-size: 20px;
+  }
+  #mobile-navbar{
+    display: inherit;
+    position: sticky;
+    top: 0;
+  }
+  .align-top{
+    display: none;
+  }
+  .navbar{
+    background-color: #4714B0;
+  }
+  .navbar .navbar-toggler-icon{
+    color: white;
+  }
+  .navbar .navbar-toggler-icon i{
+    font-size:25px;
+    top: 4px;
+    position: relative;
+  }
+  .home-top {
+  vertical-align: baseline;
+  position: relative;
+  width: 100%;
+  height: 6.5%;
+  }
+  .home-top .search-cntr h1{
+    font-size: 27px;
+  }
+  .home-top .search-cntr{
+    max-width: 100% !important;
+    left: 0;
+
+  }
+  body{
+    scroll-behavior: smooth;
+    background-attachment: fixed;
+
+  }
+  .payment-sec i{
+    display: none;
+  }
+  .payment-sec h6{
+    width: 84%;
+  }
+
+  .mobile-login{
+    display: flex;
+  }
+  .mobile-create-account{
+    display: flex;
+  }
+
+}

@@ -1,0 +1,264 @@
+html,body{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  height: 100%;
+  scroll-behavior: smooth;
+  width: 100%;
+  overflow-x: hidden;
+
+  overflow-y: hidden;
+  font-family: Lato !important;
+  /*font-family: 'Roboto', sans-serif !important;*/
+}
+
+body{
+  background-color: #E8E8E8 !important;
+}
+
+.container-fluid{
+  width: 100%;
+  height: 70%;
+  background-image: linear-gradient(-50deg,#197BD2,#8A2Be2,#7726C2);
+}
+
+.row {
+  margin: 0 auto !important;
+  position: relative;
+  top: 70px;
+  background-color: white;
+  height: 470px;
+  width: 800px;
+
+}
+.col , .col-sm-4{
+  padding:0 !important;
+}
+
+.left-side{
+  background-image: url('..\\images\\pics\\login-account.jpeg');
+  height: 100%;
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+.right-side{
+
+  height: 100%;
+}
+
+
+ .background_clr{
+  background-image: linear-gradient(90deg,#873BDD,purple) !important;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  opacity: 0.85;
+  right: 0;
+  top: 0;
+  z-index: 10;
+}
+
+.text-over-background{
+  height: 100%;
+  width: 100%;
+  position: absolute !important;
+  background: transparent;
+  right: 0;
+  z-index: 99999;
+  top: 100px;
+  color: #fff;
+}
+
+.text-over-background h4,h5,.sm-line{
+  margin-left: 15px;
+}
+
+.text-over-background h4{
+  font-size: 34px;
+}
+.text-over-background h5{
+  font-size: 29px;
+}
+
+.sm-line{
+  width: 80px;
+  height: 10px;
+   border-bottom: 5px solid #ddd;
+}
+
+
+
+.creds{
+  position: relative;
+  top: 40px;
+}
+.creds input[type='email'], input[type='password']{
+  margin-top: auto;
+  width:350px;
+  margin: 0 auto !important;
+  border-radius: 0px !important;
+
+}
+
+.btn-primary{
+  background-color: #8A2BE2 !important;
+  border:1px solid #8A2BE2 !important;
+  border-radius: 0px !important;
+}
+
+.creds label[for='email'],label[for='pwd']{
+  font-size:24px;
+}
+.btn-primary:hover{
+  background-color: #520D91 !important;
+  border-color: #520D91;
+}
+
+.creds input[type='email']:focus, input[type='password']:focus{
+ border-color: #8A2BE2;
+  box-shadow: 0 0 8px #8A2BE2;
+  outline: 0 none;
+}
+html,body{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  height: 100%;
+  scroll-behavior: smooth;
+  width: 100%;
+  overflow-x: hidden;
+
+  overflow-y: hidden;
+  font-family: Lato !important;
+  /*font-family: 'Roboto', sans-serif !important;*/
+}
+
+body{
+  background-color: #f4f4f4 !important;
+}
+
+.container-fluid{
+  width: 100%;
+  height: 70%;
+  background-image: linear-gradient(-50deg,#197BD2,#8A2Be2,#7726C2);
+}
+
+.row {
+  margin: 0 auto !important;
+  position: relative;
+  top: 70px;
+  background-color: white;
+  height: 470px;
+  width: 800px;
+
+}
+.col , .col-sm-4{
+  padding:0 !important;
+}
+
+.left-side{
+  background-image: url('..\\images\\pics\\login-account.jpeg');
+  height: 100%;
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+.right-side{
+
+  height: 100%;
+}
+
+
+ .background_clr{
+  background-image: linear-gradient(90deg,#873BDD,purple) !important;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  opacity: 0.85;
+  right: 0;
+  top: 0;
+  z-index: 10;
+}
+
+.text-over-background{
+  height: 100%;
+  width: 100%;
+  position: absolute !important;
+  background: transparent;
+  right: 0;
+  z-index: 99999;
+  top: 100px;
+  color: #fff;
+}
+
+.text-over-background h4,h5,.sm-line{
+  margin-left: 15px;
+}
+
+.text-over-background h4{
+  font-size: 34px;
+}
+.text-over-background h5{
+  font-size: 29px;
+}
+
+.sm-line{
+  width: 80px;
+  height: 10px;
+   border-bottom: 5px solid #ddd;
+}
+
+
+
+.creds{
+  position: relative;
+  top: 40px;
+}
+.creds input[type='email'], input[type='password']{
+  margin-top: auto;
+  width:350px;
+  margin: 0 auto !important;
+  border-radius: 0px !important;
+
+}
+
+.btn-primary{
+  background-color: #8A2BE2 !important;
+  border:1px solid #8A2BE2 !important;
+  border-radius: 0px !important;
+}
+
+.creds label[for='email'],label[for='pwd']{
+  font-size:24px;
+}
+.btn-primary:hover{
+  background-color: #520D91 !important;
+  border-color: #520D91;
+}
+
+.creds input[type='email']:focus, input[type='password']:focus{
+ border-color: #8A2BE2;
+  box-shadow: 0 0 8px #8A2BE2;
+  outline: 0 none;
+}
+
+.creds .actions{
+  position: relative;
+  top: 17px;
+}
+
+.creds .actions p{
+  font-size:12px;
+  margin: 0;
+}
+
+.creds .actions a{
+  color:#8A2BE2 !important;;
+}

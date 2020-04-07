@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="stylesheets/home.css">
+    <link rel="stylesheet" href="stylesheets/animate.css">
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Teko">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <title>home</title>
+    <script src="javascripts/three.min.js" type="application/javascript"></script>
+    <script type="application/javascript" src="javascripts/vanta.net.min.js"></script>
+
+<script>
+
+    $(window).on("load",function(){
+      $("html").css("overflow","hidden");
+      for(i=1; i <=3 ; i++){
+        setTimeout(function(){
+          $("#loadingDot").append(".");
+        },i*1600);
+      }
+      $(".preloader").delay(5000).fadeOut(function(){
+        $("html").css("overflow","unset");
+        $("html").css("overflow-x","hidden");
+      });
+      
+    });
+
+
+    window.onload = function(){
+      VANTA.NET('.home-top');
+    };
+
+
+    $(".navbar-toggler-icon").on("click",function(){
+        $("#collapsingNavbar").slideToggle();
+        });
+    
+
+    </script>
+  </head>
+  <div class="preloader text-center">
+    <h2 id="loadingDot">Loading</h2>
+  </div>
+  <body>
+
+
+
+    <nav class="sticky-top navbar navbar-fixed-top navbar-toggleable-sm navbar-inverse" id="mobile-navbar">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+            <div class="navbar-toggler-icon"><i class="fas fa-bars"></i></div>
+        </button>
+        <a class="navbar-brand" href="#" style="text-align:left;">DooGi</a>
+        <div class="navbar-collapse collapse" id="collapsingNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">Home</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Wow</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+      <div class="jumbotron jumbotron-fuid home-top" >
+
+          <div class="align-top">
+            <div class="navbar navbar-expand-sm bg-none justify-content-center pc-navbar">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="register">Register</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-brand brandname" href="#">DooGi</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="login">Login</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="search">Search</a>
+                </li>
+              </ul>
+
+            </div>
+
+          </div>
+
+
+
+          <div class="container text-left search-cntr">
+            <h1>Search For The Perfect <br>Services</h1>
+            <form action="search" method="get">
+                  <div class="input-group mb-3 search-form">
+
+                      <input type='text' class="form-control" placeholder="Try logo designer"/>
+                      <div class="input-group-append">
+                        <button class=" btn input-group-text" type="submit">Search</button>
+                      </div>
+                  </div>
+            </form>
+
+          </div>
+
+      </div>
+
+      <div class="jumbotron jumbotron-fluid about-us" >
+
+          <div class="container aboutUS" >
+            <h2>About Us</h2>
+            <h5>
+              DooGi is Iraq's first online freelancing marketplace which, helps freelancers and buyers connect to each other and build trust between them.
+            </h5>
+          </div>
+
+
+
+
+      </div>
+
+
+
+      <div class="jumbotron jumbotron-fluid payment-sec" style="background-color: #fff;" id="paymentSec">
+        <div class="row">
+          <div class="col-md-7" style="background-image:url('images\\pics\\pay.jpg'); background-size:cover; background-position:center;">
+
+
+          </div>
+          <div class="col-md-5"  >
+            <h2 style="color:#101010 !important;">Pay Safely</h2>
+            <div class="payment-sec right-side">
+
+              <div class="row collection">
+
+                <div class="col-sm-1">
+                  <i class="fas fa-check-circle checkboxes"></i>
+                </div>
+                <div class="col-sm-7">
+                  <h6>
+                    Making sure that the freelancer gets paid after completing their task before deadline
+                  </h6>
+                </div>
+              </div>
+
+
+                <div class="row collection">
+
+                  <div class="col-sm-1">
+                    <i class="fas fa-check-circle checkboxes"></i>
+                  </div>
+                  <div class="col-sm-7">
+                    <h6>
+                      Payment secured and will be released to the freelancer after the buyer is satisfied with their completed order
+                    </h6>
+                  </div>
+                </div>
+                <div class="row collection">
+
+
+                  <div class="col-sm-1">
+                    <i class="fas fa-check-circle checkboxes"></i>
+                  </div>
+                  <div class="col-sm-7">
+                    <h6>
+
+  A feedback system for the buyers to
+  know the quality of services the freelancer provides
+
+                    </h6>
+
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="jumbotron jumbotron-fluid services justify-content-center text-center">
+        <div class="row" >
+
+          <div class="col-sm-3 bg-none sections">
+            <i class="fas fa-hand-holding-usd icons"></i>
+            <p class="paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            </p>
+          </div>
+
+          <div class="col-sm-3 bg-none sections">
+            <i class="fas fa-money-check-alt icons"></i>
+            <p class="paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            </p>
+          </div>
+
+          <div class="col-sm-3 bg-none sections">
+            <i class="fas fa-shield-alt icons"></i>
+            <p class="paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            </p>
+          </div>
+
+          <div class="col-sm-3 bg-none sections">
+            <i class="fas fa-comments icons"></i>
+            <p class="paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            </p>
+          </div>
+
+          <div class="col-sm-3 bg-none sections">
+            <i class="fas fa-chart-line icons"></i>
+            <p class="paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            </p>
+          </div>
+
+          <div class="col-sm-3 bg-none sections">
+            <i class="fas fa-headset icons"></i>
+            <p class="paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+
+
+
+
+      <div class="container-fluid mobile-login">
+
+        <div class="row">
+          <div class=" col mx-auto cnt-login">
+            <h2>Login</h2>
+
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class="container-fluid mobile-create-account">
+
+        <div class="row">
+          <div class=" col mx-auto cnt-create">
+            <h2>Sign Up</h2>
+
+          </div>
+        </div>
+
+
+      </div>
+
+
+
+      <div class="jumbotron jumbotron-fluid create-account text-center">
+        <div class="jumbotron jumbotron-fluid background_clr">
+
+        </div>
+        <div class="jumbotron jumbotron-fluid text-over-background">
+          <h1>Sign-Up Today</h1>
+          <div class="row">
+            <div class="col left">
+              <h1>Become a Freelancer</h1>
+              <p>
+                Build your business today for free no cost and monetize your skills, help others by your services by giving them the best services
+                and earn money from them, without worrying about your payment
+              </p>
+
+              <a href="#" class="btn btn-info" role="button">Register</a>
+
+            </div>
+            <div class="col right">
+              <h1>Become a Buyer</h1>
+              <p>
+                Hire and connect to freelancers from around Iraq, search for the best services on the platform from the most talented freelancers
+                make an order, without worrying about wasting your money
+              </p>
+
+              <a href="#" class="btn btn-info" role="button">Register</a>
+
+
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+
+      <div class="jumbotron jumbotron-fluid service-type  text-center">
+        <div class="row service-categories">
+          <div class="col">
+            <i class="fas fa-paint-brush icons"></i>
+            <p>
+              Graphic & Designing
+            </p>
+          </div>
+
+          <div class="col">
+            <i class="fas fa-palette icons"></i>
+            <p>
+              Paint & Drawing
+            </p>
+          </div>
+
+          <div class="col">
+            <i class="fas fa-laptop-code icons"></i>
+            <p>
+              Coding & Programming
+            </p>
+          </div>
+
+          <div class="col">
+            <i class="far fa-file-code icons"></i>
+            <p>
+              Web Development
+            </p>
+          </div>
+
+          <div class="col">
+            <i class="fas fa-film icons"></i>
+            <p>
+              Video & Editing
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="jumbotron jumbotron-fluid promotion-section" id="promotedSec">
+        <div class="title">
+          <h2>Promoted Freelancers</h2>
+        </div>
+
+
+        <div id="c-control" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row d-flex justify-content-center">
+
+
+
+                <div class="col-sm-4 freelancers">
+                    <img src="images\\pics\\bc.png" class="Tnail">
+                    <h4 class="service-title">I Design Book Covers</h4>
+                    <div class="service-info">
+                      <div class="user-profile">
+
+                        <span class="user-name">By: DugiFugi1010</span>
+                      </div>
+
+                      <div class="service-bottom">
+                        <div class="row tags text-center">
+                          <div class="col DR" >Days Required</div>
+                          <div class="col RT" >Ratings</div>
+                          <div class="col PR" >Price</div>
+                        </div>
+                        <div class="row inpts text-center">
+                          <div class="col DR" >5 Days</div>
+                          <div class="col RT" >
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                          </div>
+                          <div class="col PR" >$30</div>
+                        </div>
+
+                      </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 freelancers">
+                    <img src="images\\pics\\web-dev.jpg" class="Tnail">
+                    <h4 class="service-title">Developing Cool Websites</h4>
+                    <div class="service-info">
+                      <div class="user-profile">
+                        <span class="user-name">By: DugiFugi1010</span>
+                      </div>
+                      <div class="service-bottom">
+                        <div class="row tags text-center">
+                          <div class="col DR" >Days Required</div>
+                          <div class="col RT" >Ratings</div>
+                          <div class="col PR" >Price</div>
+                        </div>
+                        <div class="row inpts text-center">
+                          <div class="col DR" >5 Days</div>
+                          <div class="col RT" >
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                          </div>
+                          <div class="col PR" >$30</div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 freelancers">
+                    <img src="images\\pics\\web-dev.jpg" class="Tnail">
+                    <h4 class="service-title">Developing Cool Websites</h4>
+                    <div class="service-info">
+                      <div class="user-profile">
+                        <span class="user-name">By: DugiFugi1010</span>
+                      </div>
+                      <div class="service-bottom">
+                        <div class="row tags text-center">
+                          <div class="col DR" >Days Required</div>
+                          <div class="col RT" >Ratings</div>
+                          <div class="col PR" >Price</div>
+                        </div>
+                        <div class="row inpts text-center">
+                          <div class="col DR" >5 Days</div>
+                          <div class="col RT" >
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                          </div>
+                          <div class="col PR" >$30</div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row d-flex justify-content-center">
+
+                <div class="col-sm-4 freelancers">
+                    <img src="images\\pics\\2796426.jpg" class="Tnail">
+                    <h4 class="service-title">I Design Illus</h4>
+                    <div class="service-info">
+                      <div class="user-profile">
+
+                        <span class="user-name">By: Dugi1010</span>
+                      </div>
+
+                      <div class="service-bottom">
+                        <div class="row tags text-center">
+                          <div class="col DR" >Days Required</div>
+                          <div class="col RT" >Ratings</div>
+                          <div class="col PR" >Price</div>
+                        </div>
+                        <div class="row inpts text-center">
+                          <div class="col DR" >5 Days</div>
+                          <div class="col RT" >
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                          </div>
+                          <div class="col PR" >$30</div>
+                        </div>
+
+                      </div>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-4 freelancers">
+                    <img src="images\\pics\\bc.png" class="Tnail">
+                    <h4 class="service-title">I Design Book Covers</h4>
+                    <div class="service-info">
+                      <div class="user-profile">
+
+                        <span class="user-name">By: DugiFugi1010</span>
+                      </div>
+
+                      <div class="service-bottom">
+                        <div class="row tags text-center">
+                          <div class="col DR" >Days Required</div>
+                          <div class="col RT" >Ratings</div>
+                          <div class="col PR" >Price</div>
+                        </div>
+                        <div class="row inpts text-center">
+                          <div class="col DR" >5 Days</div>
+                          <div class="col RT" >
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                          </div>
+                          <div class="col PR" >$30</div>
+                        </div>
+
+                      </div>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-4 freelancers">
+                    <img src="images\\pics\\pay.jpg" class="Tnail">
+                    <h4 class="service-title">I Can Write Copyrights</h4>
+                    <div class="service-info">
+                      <div class="user-profile">
+                        <span class="user-name">By: Lmaolmbao</span>
+                      </div>
+                      <div class="service-bottom">
+                        <div class="row tags text-center">
+                          <div class="col DR" >Days Required</div>
+                          <div class="col RT" >Ratings</div>
+                          <div class="col PR" >Price</div>
+                        </div>
+                        <div class="row inpts text-center">
+                          <div class="col DR" >1 Days</div>
+                          <div class="col RT" >
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                          </div>
+                          <div class="col PR" >$10</div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row d-flex justify-content-center">
+
+                <div class="col-sm-4 freelancers">
+                    <img src="images\\web-design\\book.jpg" class="Tnail">
+                    <h4 class="service-title">I Design Book Covers</h4>
+                    <div class="service-info">
+                      <div class="user-profile">
+
+                        <span class="user-name">By: DugiFugi1010</span>
+                      </div>
+
+                      <div class="service-bottom">
+                        <div class="row tags text-center">
+                          <div class="col DR" >Days Required</div>
+                          <div class="col RT" >Ratings</div>
+                          <div class="col PR" >Price</div>
+                        </div>
+                        <div class="row inpts text-center">
+                          <div class="col DR" >5 Days</div>
+                          <div class="col RT" >
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                          </div>
+                          <div class="col PR" >$30</div>
+                        </div>
+
+                      </div>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-4 freelancers">
+                    <img src="images\\pics\\bc.png" class="Tnail">
+                    <h4 class="service-title">I Design Book Covers</h4>
+                    <div class="service-info">
+                      <div class="user-profile">
+
+                        <span class="user-name">By: DugiFugi1010</span>
+                      </div>
+
+                      <div class="service-bottom">
+                        <div class="row tags text-center">
+                          <div class="col DR" >Days Required</div>
+                          <div class="col RT" >Ratings</div>
+                          <div class="col PR" >Price</div>
+                        </div>
+                        <div class="row inpts text-center">
+                          <div class="col DR" >5 Days</div>
+                          <div class="col RT" >
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                          </div>
+                          <div class="col PR" >$30</div>
+                        </div>
+
+                      </div>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-4 freelancers">
+                    <img src="images\\pics\\web-dev.jpg" class="Tnail">
+                    <h4 class="service-title">Developing Cool Websites</h4>
+                    <div class="service-info">
+                      <div class="user-profile">
+                        <span class="user-name">By: DugiFugi1010</span>
+                      </div>
+                      <div class="service-bottom">
+                        <div class="row tags text-center">
+                          <div class="col DR" >Days Required</div>
+                          <div class="col RT" >Ratings</div>
+                          <div class="col PR" >Price</div>
+                        </div>
+                        <div class="row inpts text-center">
+                          <div class="col DR" >5 Days</div>
+                          <div class="col RT" >
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                          </div>
+                          <div class="col PR" >$30</div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev carousel-icons" href="#c-control" role="button" data-slide="prev">
+            <i class=" fas fa-chevron-circle-left carousel-icons"></i>
+          </a>
+          <a class="carousel-control-next carousel-icons" href="#c-control" role="button" data-slide="next">
+            <i class="fas fa-chevron-circle-right carousel-icons" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+
+
+
+
+      <div class="jumbotron jumbotron-fluid help-section">
+        <div class="title">
+          <h2>Learn More From Here</h2>
+        </div>
+        <div class="container-fluid d-block mx-auto cnt-algo text-center">
+          <img data-toggle="modal" data-target="#algo-player" src='/images/xd/iPhone X-XS – 1@2x.png' class="img-fluid" id="algoimg"/>
+        </div>
+
+        <div class="modal fade" id="algo-player">
+          <div class="modal-dialog">
+            <div class="modal-content text-center">
+              <div class="modal-header d-block" style="background-color: #14AFFD;">
+                <img src="/images/xd/AlgoPayWhite.png" class="modal-title" height="35px" width="35px"/>
+
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+              <div class="modal-body">
+                <div class="embed-responsive embed-responsive-4by3">
+                  <iframe class="embed-responsive-item" id="algoVid" src="" ></iframe>
+                </div>
+              </div>
+
+              <div class="modal-footer">
+                 <button type="button" id="closeModalBtn" class="btn btn-danger" style="background-color: #8A2BE2 !important; border-color: #8A2BE2" data-dismiss="modal">Close</button>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="jumbotron-fluid login-register">
+        <div class="row">
+          <div class="col" id="tt-login">
+            <button type="button"  class="btn btn btn-primary ibtn">Login</button>
+          </div>
+          <div class="col" id="tt-register">
+            <button type="button" class="btn btn-primary rbtn">Register</button>
+          </div>
+
+        </div>
+
+      </div>
+
+
+<footer class="page-footer font-small indigo">
+
+
+  <div class="container text-center text-md-left">
+
+
+    <div class="row">
+
+
+      <div class="col-md-3 mx-auto">
+
+
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Pages</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Create a Services</a>
+          </li>
+          <li>
+            <a href="#!">Search</a>
+          </li>
+          <li>
+            <a href="#!">Sign Up</a>
+          </li>
+          <li>
+            <a href="#!">Login</a>
+          </li>
+          <li>
+            <a href="#!">Home</a>
+          </li>
+        </ul>
+
+      </div>
+
+
+      <hr class="clearfix w-100 d-md-none">
+
+
+      <div class="col-md-3 mx-auto">
+
+
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Support</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Customer Service</a>
+          </li>
+          <li>
+            <a href="#!">Payment</a>
+          </li>
+          <li>
+            <a href="#!">Report</a>
+          </li>
+          <li>
+            <a href="#!">AlgoPay</a>
+          </li>
+        </ul>
+
+      </div>
+
+      <hr class="clearfix w-100 d-md-none">
+
+
+      <div class="col-md-3 mx-auto">
+
+
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Community</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Help</a>
+          </li>
+          <li>
+            <a href="#!">Forums</a>
+          </li>
+          <li>
+            <a href="#!">Event</a>
+          </li>
+          <li>
+            <a href="#!">Invite Friend</a>
+          </li>
+        </ul>
+
+      </div>
+
+      <hr class="clearfix w-100 d-md-none">
+
+
+      <div class="col-md-3 mx-auto">
+
+
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Categories</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Tech</a>
+          </li>
+          <li>
+            <a href="#!">Design</a>
+          </li>
+          <li>
+            <a href="#!">Music</a>
+          </li>
+          <li>
+            <a href="#!">Art</a>
+          </li>
+          <li>
+            <a href="#!">Business</a>
+          </li>
+          <li>
+            <a href="#!">Writing</a>
+          </li>
+        </ul>
+
+      </div>
+
+      <div class="col-md-3 mx-auto">
+
+        <div class="row">
+          <div class="col">
+            <i class="fab fa-facebook"></i>
+
+          </div>
+          <div class="col">
+            <i class="fab fa-instagram"></i>
+          </div>
+          <div class="col">
+            <i class="fab fa-linkedin"></i>
+          </div>
+
+        </div>
+
+
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <span>DooGi</span>
+  </div>
+
+
+</footer>
+
+
+      <script>
+
+      $("#tt-login").mouseenter(function(){
+  $("#tt-login").addClass("change-bg");
+  $(".ibtn").addClass("circle-btn");
+});
+
+
+$("#tt-login").mouseleave(function(){
+  $("#tt-login").removeClass("change-bg");
+  $(".ibtn").removeClass("circle-btn");
+});
+
+
+
+$("#tt-register").mouseenter(function(){
+  $("#tt-register").addClass("change-bg");
+  $(".rbtn").addClass("circle-btn");
+});
+
+
+$("#tt-register").mouseleave(function(){
+  $("#tt-register").removeClass("change-bg");
+  $(".rbtn").removeClass("circle-btn");
+});
+
+
+
+      $("#algoimg").on("click",function(){
+
+        $("#algoVid").attr("src","/videos/algo-pay.mp4");
+      });
+      $("#closeModalBtn").on("click",function(){
+        $("#algoVid").attr("src","");
+      });
+      $(".close").on("click",function(){
+        $("#algoVid").attr("src","");
+      });
+      </script>
+
+
+
+  </body>
+
+</html>

@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesheets\\user.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <title>User Profile</title>
+  </head>
+  <body>
+    <div class="container-fluid d-block mx-auto Profile">
+      <div class="row">
+        <div class="col-sm-5 pro-pic">
+
+        </div>
+
+        <div class="col-md-4 pro-desc">
+          <div class="d-block mx-auto">
+            <h1><%= Username %></h1>
+
+           
+            
+            <ul class="list-inline rating-stars">
+
+              <% for(var x =1; x < Stars; x++) {%>
+                <li class="list-inline-item"><i class="fas fa-star"></i></li>
+              <% }%>
+
+              <% if(parseInt(Stars) === Stars) { %>
+
+              <% } else { %>
+                <li class="list-inline-item"><i class="fas fa-star-half-alt"></i></li>
+              <% } %>
+              <% var blank_stars = 5 - Math.ceil(Stars) %>
+              <% for(var x =0; x < blank_stars; x++) {%>
+                <li class="list-inline-item"><i class="far fa-star"></i></li>
+              <% }%>
+
+              <% if(Num_sales != "undefined"){ %>
+                <li class="list-inline-item">(<%= Num_sales %>)</li>
+              <% } %>
+            </ul>
+            <span class="desc"><%= Desc %></span>
+            <div class="job-tags">
+              <ul class="list-inline">
+                <% for(var i in Tags) {%>
+                  <li class="list-inline-item"><u><%= Tags[i] %></u></li>
+                <%} %>
+              </ul>
+            </div>
+            
+            <div class="action-buttons">
+              <ul class="list-inline">
+                <li class="list-inline-item"><button type="button" class="btn btn-dark">Edit</button></li>
+                
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="container-fluid d-block mx-auto Services ">
+      <div class="container-fluid cate-title text-center">
+        <h1>Top 3 Services</h1>
+      </div>
+      <div id="Xslider">
+        <div class="row">
+          <div class="col-sm-4 freelancers">
+              <img src="images\\pics\\bc.png" class="Tnail">
+              <h4 class="service-title">I Design Book Covers</h4>
+              <div class="service-info">
+                <div class="user-profile">
+  
+                  <span class="user-name">By: DugiFugi1010</span>
+                </div>
+  
+                <div class="service-bottom">
+                  <div class="row tags text-center">
+                    <div class="col DR" >Days Required</div>
+                    <div class="col RT" >Ratings</div>
+                    <div class="col PR" >Price</div>
+                  </div>
+                  <div class="row inpts text-center">
+                    <div class="col DR" >5 Days</div>
+                    <div class="col RT" >
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="col PR" >$30</div>
+                  </div>
+  
+                </div>
+              </div>
+          </div>
+  
+          <div class="col-sm-4 freelancers">
+              <img src="images\\pics\\bc.png" class="Tnail">
+              <h4 class="service-title">I Design Book Covers</h4>
+              <div class="service-info">
+                <div class="user-profile">
+  
+                  <span class="user-name">By: DugiFugi1010</span>
+                </div>
+  
+                <div class="service-bottom">
+                  <div class="row tags text-center">
+                    <div class="col DR" >Days Required</div>
+                    <div class="col RT" >Ratings</div>
+                    <div class="col PR" >Price</div>
+                  </div>
+                  <div class="row inpts text-center">
+                    <div class="col DR" >5 Days</div>
+                    <div class="col RT" >
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="col PR" >$30</div>
+                  </div>
+  
+                </div>
+              </div>
+          </div>
+  
+          <div class="col-sm-4 freelancers">
+              <img src="images\\pics\\bc.png" class="Tnail">
+              <h4 class="service-title">I Design Book Covers</h4>
+              <div class="service-info">
+                <div class="user-profile">
+  
+                  <span class="user-name">By: DugiFugi1010</span>
+                </div>
+  
+                <div class="service-bottom">
+                  <div class="row tags text-center">
+                    <div class="col DR" >Days Required</div>
+                    <div class="col RT" >Ratings</div>
+                    <div class="col PR" >Price</div>
+                  </div>
+                  <div class="row inpts text-center">
+                    <div class="col DR" >5 Days</div>
+                    <div class="col RT" >
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="col PR" >$30</div>
+                  </div>
+  
+                </div>
+              </div>
+          </div>
+  
+        </div>
+      </div>
+      
+
+    </div>
+
+    <div class="container-fluid mx-auto d-block Portfolio">
+      <div class="container-fluid cate-title text-center">
+        <h1>Portfolio</h1>
+      </div>
+      <div class="row">
+        <div class="col" style="background-image:url('..\\..\\images\\web-design\\girl1.jpg');">
+
+        </div>
+
+        <div class="col" style="background-image:url('..\\..\\images\\web-design\\girl1.jpg');">
+
+        </div>
+
+        <div class="col" style="background-image:url('..\\..\\images\\web-design\\girl2.jpeg');">
+
+        </div>
+
+        <div class="w-100"></div>
+
+        <div class="col" style="background-image:url('..\\..\\images\\web-design\\218.jpg');">
+
+        </div>
+
+        <div class="col" style="background-image:url('..\\..\\images\\web-design\\pen.jpg');">
+
+        </div>
+
+        <div class="col" style="background-image:url('..\\..\\images\\web-design\\girl1.jpg');">
+
+        </div>
+
+        <div class="w-100"></div>
+
+        <div class="col" style="background-image:url('..\\..\\images\\web-design\\218.jpg');">
+
+        </div>
+
+        <div class="col" style="background-image:url('..\\..\\images\\web-design\\pen.jpg');">
+
+        </div>
+
+        <div class="col" style="background-image:url('..\\..\\images\\web-design\\girl1.jpg');">
+
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="container-fluid mx-auto d-block Feedbacks">
+      <div class="container-fluid cate-title text-center">
+        <h1>Feedbacks</h1>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="container-fluid ratingCreds">
+            <ul class="list-inline">
+              <li class="list-inline-item">              <img src='..\\..\\images\\web-design\\proh.png' class="img-fluid proPic rounded-circle"
+                               width="50" height="50"/></li>
+              <li class="list-inline-item">
+                <span class="ratingName">John Doe</span>
+              </li>
+
+              <li class="list-inline-item">
+                <ul class="list-inline ratingStars">
+                  <li class="list-inline-item"><i class="fas fa-star"></i></li>
+                  <li class="list-inline-item"><i class="fas fa-star"></i></li>
+                </ul>
+              </li>
+
+
+            </ul>
+            <p class="ratingText">
+              Lorem ipsum dol do eiusmod temp aliit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="container-fluid ratingCreds">
+            <ul class="list-inline">
+              <li class="list-inline-item">              <img src='..\\..\\images\\web-design\\girl.jpeg' class="img-fluid proPic rounded-circle"
+                               width="50" height="50"/></li>
+              <li class="list-inline-item">
+                <span class="ratingName">John Doe</span>
+              </li>
+
+              <li class="list-inline-item">
+                <ul class="list-inline ratingStars">
+                  <li class="list-inline-item"><i class="fas fa-star"></i></li>
+                  <li class="list-inline-item"><i class="fas fa-star"></i></li>
+                </ul>
+              </li>
+
+
+            </ul>
+            <p class="ratingText">
+              Lorem ipsum dol do eiusmod temp aliit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="container-fluid ratingCreds">
+            <ul class="list-inline">
+              <li class="list-inline-item">              <img src='..\\..\\images\\web-design\\girl2.jpeg' class="img-fluid proPic rounded-circle"
+                               width="50" height="50"/></li>
+              <li class="list-inline-item">
+                <span class="ratingName">John Doe</span>
+              </li>
+
+              <li class="list-inline-item">
+                <ul class="list-inline ratingStars">
+                  <li class="list-inline-item"><i class="fas fa-star"></i></li>
+                  <li class="list-inline-item"><i class="fas fa-star"></i></li>
+                </ul>
+              </li>
+
+
+            </ul>
+            <p class="ratingText">
+              Lorem ipsum dol do eiusmod temp aliit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="container-fluid ratingCreds">
+            <ul class="list-inline">
+              <li class="list-inline-item">              <img src='..\\..\\images\\web-design\\girl1.jpg' class="img-fluid proPic rounded-circle"
+                               width="50" height="50"/></li>
+              <li class="list-inline-item">
+                <span class="ratingName">John Doe</span>
+              </li>
+
+              <li class="list-inline-item">
+                <ul class="list-inline ratingStars">
+                  <li class="list-inline-item"><i class="fas fa-star"></i></li>
+                  <li class="list-inline-item"><i class="fas fa-star"></i></li>
+                </ul>
+              </li>
+
+
+            </ul>
+            <p class="ratingText">
+              Lorem ipsum dol do eiusmod temp aliit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="container-fluid ratingCreds">
+            <ul class="list-inline">
+              <li class="list-inline-item">              <img src='..\\..\\images\\web-design\\girl1.jpg' class="img-fluid proPic rounded-circle"
+                               width="50" height="50"/></li>
+              <li class="list-inline-item">
+                <span class="ratingName">John Doe</span>
+              </li>
+
+              <li class="list-inline-item">
+                <ul class="list-inline ratingStars">
+                  <li class="list-inline-item"><i class="fas fa-star"></i></li>
+                  <li class="list-inline-item"><i class="fas fa-star"></i></li>
+                </ul>
+              </li>
+
+
+            </ul>
+            <p class="ratingText">
+              Lorem ipsum dol do eiusmod temp aliit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="container-fluid ratingCreds">
+            <ul class="list-inline">
+              <li class="list-inline-item">              <img src='..\\..\\images\\web-design\\girl1.jpg' class="img-fluid proPic rounded-circle"
+                               width="50" height="50"/></li>
+              <li class="list-inline-item">
+                <span class="ratingName">John Doe</span>
+              </li>
+
+              <li class="list-inline-item">
+                <ul class="list-inline ratingStars">
+                  <li class="list-inline-item"><i class="fas fa-star"></i></li>
+                  <li class="list-inline-item"><i class="fas fa-star"></i></li>
+                </ul>
+              </li>
+
+
+            </ul>
+            <p class="ratingText">
+              Lorem ipsum dol do eiusmod temp aliit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="container-fluid ratingCreds">
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <img src='..\\..\\images\\web-design\\person1.jpeg' class="img-fluid proPic rounded-circle" width="50" height="50"/>
+                             </li>
+              <li class="list-inline-item">
+                <span class="ratingName">John Doe</span>
+              </li>
+
+              <li class="list-inline-item">
+                <ul class="list-inline ratingStars">
+                  <li class="list-inline-item"><i class="fas fa-star"></i></li>
+                  <li class="list-inline-item"><i class="fas fa-star"></i></li>
+                </ul>
+              </li>
+
+
+            </ul>
+            <p class="ratingText">
+              Lorem ipsum dol do eiusmod temp aliit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="container-fluid ratingCreds">
+            <ul class="list-inline">
+              <li class="list-inline-item">              <img src='..\\..\\images\\web-design\\person3.jpeg' class="img-fluid proPic rounded-circle"
+                               width="50" height="50"/></li>
+              <li class="list-inline-item">
+                <span class="ratingName">John Doe</span>
+              </li>
+
+              <li class="list-inline-item">
+                <ul class="list-inline ratingStars">
+                  <li class="list-inline-item"><i class="fas fa-star"></i></li>
+                  <li class="list-inline-item"><i class="fas fa-star"></i></li>
+                </ul>
+              </li>
+
+
+            </ul>
+            <p class="ratingText">
+              Lorem ipsum dol do eiusmod temp aliit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="container-fluid ratingCreds">
+            <ul class="list-inline">
+              <li class="list-inline-item">              <img src='..\\..\\images\\web-design\\girl1.jpg' class="img-fluid proPic rounded-circle"
+                               width="50" height="50"/></li>
+              <li class="list-inline-item">
+                <span class="ratingName">John Doe</span>
+              </li>
+
+              <li class="list-inline-item">
+                <ul class="list-inline ratingStars">
+                  <li class="list-inline-item"><i class="fas fa-star"></i></li>
+                  <li class="list-inline-item"><i class="fas fa-star"></i></li>
+                </ul>
+              </li>
+
+
+            </ul>
+            <p class="ratingText">
+              Lorem ipsum dol do eiusmod temp aliit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+  </body>
+</html>

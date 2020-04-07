@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="stylesheets/login.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-4 left-side">
+            <div class="col background_clr">
+            </div>
+            <div class="col text-over-background">
+              <h4>Welcome Back</h4>
+              </br>
+              <div class="sm-line">
+              </div>
+              <h5>
+                now login to your account
+              </h5>
+            </div>
+          </div>
+          <div class="col right-side text-center">
+            <% if(Errors != "") {%>
+              <div class="alert alert-danger alert-dismissible fade show" style="font-size:12px;">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <strong>Error</strong> <%= Errors %>
+              </div>
+            <% }%>
+
+            <h1 style="margin-top:30px;">Login</h1>
+
+            <div class="creds">
+              <form action="" method="post">
+                   <div class="form-group text-center">
+                     <label for="email">Email address</label>
+                     <input type="email" class="form-control" id="email" name="email"/>
+                   </div>
+                   <div class="form-group">
+                     <label for="pwd">Password</label>
+                     <input type="password" class="form-control" id="pwd" name="passwd"/>
+                   </div>
+                   <div class="form-group form-check">
+                     <label class="form-check-label">
+                       <input class="form-check-input" type="checkbox"> Remember me
+                     </label>
+                   </div>
+
+                   <button type="submit" class="btn btn-primary">Submit</button>
+                   <div class="actions">
+                     <p ><a href="#">Forgot</a> Your Password ?</p>
+                     <p>
+                       Don't Have An Account <a href="#">Sign In</a>
+                     </p>
+                   </div>
+                </form>
+            </div>
+          </div>
+        </div>
+    </div>
+  </body>
+</html>

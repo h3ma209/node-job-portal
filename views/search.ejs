@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="/javascripts/search.js">
+
+    </script>
+    <link type="text/css" rel="stylesheet" href="..\\stylesheets\\search.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <title>Search</title>
+
+
+  </head>
+  <body>
+    <div class="container-fluid top-bar">
+      <div class="row all">
+        <div class="col search-form">
+          <form class="" action="/search" method="get">
+            <div class="form-group">
+              <input type="text" name="srchInput" class="form-control" autocomplete="off" placeholder="Search"/>
+            </div>
+          </form>
+
+        </div>
+        <div class="col filters">
+          <div class="row">
+            <div class="col">
+              <div class="dropdown">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                      Price
+                    </button>
+                    <div class="dropdown-menu">
+                      <div class="radio" ><label><input type="radio" name="price" style="margin-left:10px;margin-right:10px;" value="-10">Less than 10$</label></div>
+                      <div class="radio" ><label><input type="radio" name="price" style="margin-left:10px;margin-right:10px;" value="-30" checked>Less than 30$</label></div>
+                      <div class="radio" ><label><input type="radio" name="price" style="margin-left:10px;margin-right:10px;" value="+30" >More than 30$</label></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+              <div class="dropdown">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                      Rating
+                    </button>
+                    <div class="dropdown-menu ">
+                      <div class="radio" ><label><input type="radio" name="rating" style="margin-left:10px;margin-right:10px;" value="5">5 Star</label></div>
+                      <div class="radio" ><label><input type="radio" name="rating" style="margin-left:10px;margin-right:10px;" value="4">4 Star</label></div>
+                      <div class="radio" ><label><input type="radio" name="rating" style="margin-left:10px;margin-right:10px;" value="3">3 Star</label></div>
+                      <div class="radio" ><label><input type="radio" name="rating" style="margin-left:10px;margin-right:10px;" value="2">2 Star</label></div>
+                      <div class="radio" ><label><input type="radio" name="rating" style="margin-left:10px;margin-right:10px;" value="1" checked>1 Star</label></div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+              <div class="dropdown">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                      Date
+                    </button>
+                    <div class="dropdown-menu ">
+                      <div class="radio" ><label><input type="radio" name="date" style="margin-left:10px;margin-right:10px;" value="1m">1 Month ago</label></div>
+                      <div class="radio" ><label><input type="radio" name="date" style="margin-left:10px;margin-right:10px;" value="3m">3 Month ago</label></div>
+                      <div class="radio" ><label><input type="radio" name="date" style="margin-left:10px;margin-right:10px;" value="1y">1 Year ago</label></div>
+                      <div class="radio" ><label><input type="radio" name="date" style="margin-left:10px;margin-right:10px;" value="2y" checked>2 Year ago</label></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+              <div class="dropdown">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                      Categories
+                    </button>
+                    <div class="dropdown-menu">
+                      <div class="checkbox" ><label><input type="checkbox" name="categories" style="margin-left:10px;margin-right:10px;" value="programming">Programming</label></div>
+                      <div class="checkbox" ><label><input type="checkbox" name="categories" style="margin-left:10px;margin-right:10px;" value="webite">Website</label></div>
+                      <div class="checkbox" ><label><input type="checkbox" name="categories" style="margin-left:10px;margin-right:10px;" value="ui">UI</label></div>
+                      <div class="checkbox" ><label><input type="checkbox" name="categories" style="margin-left:10px;margin-right:10px;" value="ux">UX</label></div>
+                      <div class="checkbox" ><label><input type="checkbox" name="categories" style="margin-left:10px;margin-right:10px;" value="gd">Graphic Design</label></div>
+                      <div class="checkbox" ><label><input type="checkbox" name="categories" style="margin-left:10px;margin-right:10px;" value="sketch">Sketch</label></div>
+                    </div>
+                </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <% if (Reqs == ''){%>
+      <h2> <%= Errors %> </h2>
+    <% } %>
+    <% if (Reqs != '' && Errors == '') {%>
+      <div class="fls row d-flex justify-content-center">
+      <% Object.keys(Reqs).forEach((key)=>{ %>
+
+
+
+
+          <div class="col-sm-4 freelancers" data-date="<%= Reqs[key]['date'] %>" data-price="<%= Reqs[key]['price'] %>" data-cate="<%= Reqs[key]['composer'] %>" data-rating="<%= Math.floor((Reqs[key]['ratings']/Reqs[key]['num_of_orders'])) %>">
+              <img src="/images\\pics\\bc.png" class="Tnail">
+              <h4 class="service-title"><%= Reqs[key]['name'] %></h4>
+              <div class="service-info">
+                <div class="user-profile">
+                  <span class="user-name">By: <%= Reqs[key]['composer'] %></span>
+                </div>
+                <div class="service-bottom">
+                  <div class="row tags text-center">
+                    <div class="col DR" >Required</div>
+                    <div class="col RT" >Ratings</div>
+                    <div class="col PR" >Price</div>
+                  </div>
+                  <div class="row inpts text-center">
+                    <div class="col DR" ><%= Reqs[key]['days_req'] %> Days</div>
+                    <div class="col RT" >
+                      <% for(var x =1; x < (Reqs[key]['ratings']/Reqs[key]['num_of_orders']); x++) {%>
+                          <i class="fas fa-star"></i>
+                      <% }%>
+                    </div>
+                    <div class="col PR" >$<%= Reqs[key]['price'] %></div>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+    <% }) %>
+    </div>
+    <%    } else { %>
+    <div class="container-fluid categories text-center technology">
+
+      <div class="container-fluid cate-title ">
+        <h1>Technology</h1>
+      </div>
+
+      <div class="row">
+        <div class="col cat-cols" >
+          <img class="img-fluid" src="/images\\categories\\web-developer.jpeg" >
+          <h4>Front-End</h4>
+        </div>
+        <div class="col cat-cols" >
+          <img class="img-fluid" src="/images\\categories\\programming.jpg" >
+          <h4>Programming</h4>
+        </div>
+        <div class="col cat-cols" >
+          <img class="img-fluid" src="/images\\categories\\word-press.jpeg" >
+          <h4>Wordpress</h4>
+        </div>
+        <div class="col cat-cols" >
+          <img class="img-fluid" src="/images\\categories\\back-end.jpeg" >
+          <h4>Back-End</h4>
+        </div>
+
+      </div>
+
+    </div>
+    <div class="container-fluid categories text-center technology">
+
+      <div class="container-fluid cate-title ">
+        <h1>Technology</h1>
+      </div>
+
+      <div class="row">
+        <div class="col cat-cols" >
+          <img class="img-fluid" src="/images\\categories\\web-developer.jpeg" >
+          <h4>Front-End</h4>
+        </div>
+        <div class="col cat-cols" >
+          <img class="img-fluid" src="/images\\categories\\programming.jpg" >
+          <h4>Programming</h4>
+        </div>
+        <div class="col cat-cols" >
+          <img class="img-fluid" src="/images\\categories\\word-press.jpeg" >
+          <h4>Wordpress</h4>
+        </div>
+        <div class="col cat-cols" >
+          <img class="img-fluid" src="/images\\categories\\back-end.jpeg" >
+          <h4>Back-End</h4>
+        </div>
+
+      </div>
+
+    </div>
+    <div class="container-fluid categories text-center technology">
+
+      <div class="container-fluid cate-title ">
+        <h1>Technology</h1>
+      </div>
+
+      <div class="row">
+        <div class="col cat-cols" >
+          <img class="img-fluid" src="/images\\categories\\web-developer.jpeg" >
+          <h4>Front-End</h4>
+        </div>
+        <div class="col cat-cols" >
+          <img class="img-fluid" src="/images\\categories\\programming.jpg" >
+          <h4>Programming</h4>
+        </div>
+        <div class="col cat-cols" >
+          <img class="img-fluid" src="/images\\categories\\word-press.jpeg" >
+          <h4>Wordpress</h4>
+        </div>
+        <div class="col cat-cols" >
+          <img class="img-fluid" src="/images\\categories\\back-end.jpeg" >
+          <h4>Back-End</h4>
+        </div>
+
+      </div>
+
+    </div>
+
+    <% } %>
+
+
+
+
+
+
+    <script type="text/javascript">
+    $(function(){
+
+      $(".radio input").on("change",()=>{
+          var dts = {"1m":30,"3m":90,"1y":365,"2y":(365*2)};
+          var chosen_date = $("input[name=date]:checked").val();
+
+          var chosen_price= $("input[name=price]:checked").val();
+          var prs = {"-30":30,"+30":10,"-10":10};
+
+          var chosen_rating = $("input[name=rating]:checked").val();
+
+
+          var today = new Date();
+          var contents = $(".col-sm-4.freelancers");
+
+          for(x=0;x < contents.length;x++){
+            var dt = $(contents[x]).data("date");
+            var day_dif = Math.floor((new Date() - new Date(dt)) / 8.64e+7);
+
+            if(dts[chosen_date] > day_dif && 
+            $(contents[x]).data("rating") >= parseInt(chosen_rating) &&
+            $(contents[x]).data("price") <= prs[chosen_price]
+            
+            ){
+              
+              $(contents[x]).css("display","block");
+            }
+            else{
+              
+              $(contents[x]).css("display","none");
+
+            }
+          }
+      });
+
+
+
+      $(".checkbox input").on("change",()=>{
+          var selected = [];
+          var x= $('input[name=categories]:checked');
+          Array.prototype.forEach.call(x, function(el){
+            selected.push(el.value);
+          });
+          console.log(selected);
+      });
+
+      
+
+
+    $('.dropdown').on('show.bs.dropdown', function(e){
+        $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
+    });
+
+    $('.dropdown').on('hide.bs.dropdown', function(e){
+        e.preventDefault();   
+        $(this).find('.dropdown-menu').first().stop(true, true).slideUp(400, function(){
+            $('.dropdown').removeClass('show');
+            $('.dropdown-menu').removeClass('show');
+            $('.dropdown').find('.dropdown-toggle').attr('aria-expanded','false');
+        });
+    });
+});
+
+
+    </script>
+  </body>
+</html>

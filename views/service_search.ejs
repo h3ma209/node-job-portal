@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <title></title>
+  </head>
+
+  <style>
+
+  body{
+    background-color: #111111;
+    color:white;
+  }
+  .form-control{
+    position: relative;
+    top: 110% !important;
+  }
+
+  </style>
+
+  <body>
+    <div class="container d-block mx-auto">
+      <div class="form-group">
+        <input type="text" autocomplete="off" id="srchInpt" name="srchInput" class="form-control" placeholder="Search"/>
+      </div>
+      <ul class="list-group" id="myList" style="color: black;">
+      </ul>
+    </br>
+    </div>
+
+<!-- <script src="/socket.io/socket.io.js"></script> -->
+
+    <script>
+    //var socket = io();
+    var jobs = [
+       {name: "Web Developer"},
+       {name: "Programmer"},
+       {name: "Painter"},
+       {name: "Editor"},
+       {name: "Drawer"},
+       {name: "Hacker"},
+       {name: "Penetester"},
+       {name: "Front End"},
+       {name: "Back End"},
+       {name: "Wordpress"},
+       {name: "Designer"},
+       {name: "digital artist"},
+       {name: "Graphice Designer"},
+       {name: "Writer"},
+       {name: "Copyright write"},
+       {name: "Book Cover Designer"},
+       {name: "Sketcher"},
+       {name: "Cosplayer"}
+    ];
+
+
+
+
+    function getSearch(txt){
+    let matches = jobs.filter(st => {
+                	const regex =  new RegExp("^"+txt,'gi');
+            	    return st.name.match(regex);
+                });
+      return matches
+    };
+
+    $("#srchInpt").on("keyup",function(){
+      $("#myList").empty();
+      var srched = getSearch($(this).val());
+      srched.forEach(key => {
+        $("#myList").append("<li class='list-group-item'>"+key.name+"</li>");
+        });
+
+    });
+
+
+
+    </script>
+  </body>
+</html>

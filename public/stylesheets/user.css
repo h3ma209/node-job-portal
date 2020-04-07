@@ -1,0 +1,229 @@
+body{
+  max-height: 300%;
+  width: 100%;
+}
+ .Profile{
+  border: 1px solid #101010;
+  background-color: #fff !important;
+  height: 500px !important;
+  width: 70% !important;;
+  background-color: black;
+  margin:0 auto !important;
+  position: relative;
+  top: 70px;
+}
+
+.pro-pic{
+  background-image: url(..\\..\\images\\web-design\\girl1.jpg);
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+}
+.pro-desc{
+  min-width: 400px;
+
+}
+.pro-desc h1{
+  position: relative;
+  left: 10px;
+  top: 80px;
+}
+.pro-desc .job-tags{
+  position: relative;
+  top: 150px;
+  display:  initial;
+  font-size: 19px;
+
+}
+.desc{
+  position: relative;
+  top:100px;
+  font-size:15px;
+}
+.Profile .rating-stars{
+  position: relative;
+  left: 10px;
+  top: 90px;
+}
+
+.action-buttons{
+  position: relative;
+  top: 210px;
+  text-align: center;
+}
+
+.action-buttons button{
+  color: #fff;
+  background-color: #8a2bec;
+  border: 3px solid #8a2bec;
+  border-radius: 0;
+  margin-left: 10px;
+  width: 100px;
+}
+
+.Services{
+  background-color: #fff !important;
+  height: 600px !important;
+  width: 80% !important;;
+  background-color: black;
+  margin:0 auto !important;
+  position: relative;
+  top: 170px;
+}
+
+.Service .colms{
+  border: 1px solid red;
+}
+
+.cate-title{
+  border-bottom: 2px solid #ddd;
+  margin-bottom: 40px;
+  width: 50% !important;
+  margin-top: 20px;
+}
+
+.cate-title h1{
+  padding-bottom: 6px;
+}
+
+.row .freelancers{
+  margin:5px;
+  background-color: #fff;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  max-width:305px !important;
+  max-height: 420px;
+  font-family: Bahnschrift;
+  border: 2px solid #DDDDDD;
+}
+
+.row .freelancers .Tnail{
+  height: 270px;
+  width: 301px;
+  max-width:330px;
+
+}
+
+.row .freelancers .service-title{
+  font-size: 21px;
+  text-align: center;
+  margin-top: 14px;
+}
+.row .freelancers .service-info{
+  width: 100%;
+  height: 120px;
+}
+
+.row .freelancers .service-info .user-profile{
+  margin-left: 10px;
+
+  margin-bottom: 10px;
+}
+
+.row .freelancers .service-info .user-profile .profile-pic{
+  border-radius: 50px;
+  border:1px solid #101010;
+  max-height: 30px;
+  max-width: 30px;
+
+}
+.row .freelancers .service-info .user-profile .user-name{
+  font-size: 13px;
+  position: relative;
+  top: 3px;
+
+}
+
+.row .freelancers .service-info .service-bottom{
+  height: 110px;
+}
+
+.row .freelancers .service-info .service-bottom .tags span{
+  margin-left: 5px;
+}
+
+.row .freelancers .service-info .service-bottom .col{
+  font-size: 14px;
+  color:#6a6a6a;
+}
+
+
+
+.row .freelancers .service-info .service-bottom .inpts .col{
+  color: #101010 !important;
+}
+
+
+.row .freelancers .service-info .service-bottom .inpts .col i{
+  color:#8A2BE2;
+}
+
+.Portfolio{
+  background-color: #fff !important;
+  height: 600px !important;
+  width: 80% !important;;
+  background-color: black;
+  margin:0 auto !important;
+  position: relative;
+  top: 170px;
+}
+
+.Portfolio .row .col{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 130px;
+  margin: 2px;
+}
+
+ 
+.Portfolio .row .col{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 130px;
+  margin: 2px;
+}
+
+
+.Feedbacks{
+  background-color: #fff !important;
+  height: 600px !important;
+  width: 90% !important;;
+  background-color: black;
+  margin:0 auto !important;
+  position: relative;
+  top: 170px;
+
+}
+
+.Feedbacks .col{
+  margin-top: 45px !important;
+}
+
+.Feedbacks .ratingText{
+  margin-top: 10px;
+  font-size: 14.3px;
+  margin-top: 20px !important;
+}
+
+.Feedbacks .ratingCreds{
+  border-bottom: 4px solid #f1f1f1 ;
+  padding-bottom: 10px;
+}
+
+.Feedbacks .ratingText{
+  margin-top: 10px;
+  font-size: 14.3px;
+}
+
+
+.Feedbacks .ratingStars{
+  font-size: 10px;
+  color: #8a2bec;
+}
+
+.img-fluid {
+    max-width: 90% !important;
+    height: auto;
+}
