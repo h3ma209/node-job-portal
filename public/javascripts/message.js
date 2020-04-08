@@ -12,10 +12,6 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
     addMsg(msg,'.mobile .middle');
   });
   
-  
-  
-  
-  
   $(".mobile .bottom form").submit(function(e){
       e.preventDefault();
       let msg = $(".bottom form input").val();
@@ -43,7 +39,7 @@ socket.on("chat",function(data){
 $(".pc form").submit(function(e){
   e.preventDefault();
   let msg = $(".pc form input").val();
-  socket.emit('chat',{"from":name,'msg':msg});
+  socket.emit('send-message',{"from":name,'msg':msg});
   $('.pc .middle').append(`
     
     <div class="message-row you">
@@ -57,22 +53,47 @@ $(".pc form").submit(function(e){
 
 }
 
-function addMsg(msg,div){
+function addMsg(msg,div,date='Apr 16'){
   $(div).append(`
     <div class="message-row other">
       <div class="message">${msg} </div>
-      <div class="date">Apr 16</div>
+      <div class="date">${date}</div>
     </div>
   `)
 }
 
-////// pc section/////////
+socket.on("retreiveMSGS",all_msgs=>{
+  $('.pc .middle').empty();
+  Object.keys(all_msgs).forEach((key)=>{
+    let k = all_msgs[key];
+    let from = k.form;
+    let to = k.to;
+    let date = k.date;
+    let msg = k.msg;
+    let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    date = new Date(date);
+    let month = months[date.getMonth()]
+    let day = date.getDay();
+    date = month + " " + day;
+    if(k.from == name){
+      $('.pc .middle').append(`
+    <div class="message-row you">
+        <div class="message">${msg}</div>
+        <div class="date">${date}</div>
+    </div>
+    
+    `);
+    }
+    else{
+      
+      addMsg(msg,".pc .middle",date);
+    }
+    
+  });
+});
 
-
-
-/////////
-
-///////// mobile section /////////////
-
-
-  //////
+function changeChannels(url){
+  
+  window.history.pushState('','',"/message/"+url);
+  socket.emit("chaningChannels",url);
+}

@@ -38,7 +38,7 @@ router.post('/', (req, res, next)=>{
         keys:tags,
         gender:gender
       })
-      db.close()
+      db.close();
 
     });
     

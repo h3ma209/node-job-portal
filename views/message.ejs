@@ -26,7 +26,8 @@
     
                 </div>
                 <div class="contact-list">
-                    <div class="contact">
+                    <!--
+                        <div class="contact">
                         <img src="https://images.pexels.com/photos/756453/pexels-photo-756453.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"/>
                         <div class="name">
                             John Doe
@@ -34,10 +35,12 @@
                         <div class="date">Mar 16</div>
                         <div class="msg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat ipsa quam laudantium perferendis ipsum molestias fugit, ratione iste sequi libero reprehenderit facere a possimus earum numquam obcaecati eum, explicabo molestiae!</div>
                     </div>
+                    -->
+                    
 
                     <% if(data){ %>
                         <% Object.keys(data).forEach((key)=>{ %>
-                            <div class="contact">
+                            <div class="contact" onclick="changeChannels(`<%= data[key]['_id'] %>`)">
                                 <img src="https://images.pexels.com/photos/756453/pexels-photo-756453.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"/>
                                 <div class="name">
                                     <%= data[key]['from'] %>
@@ -183,6 +186,7 @@
                 </div>
             </div>
         </div>
+        
     </body>
     <script src="/socket.io/socket.io.js"></script>
     <script src="javascripts\\message.js"></script>
